@@ -2,19 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>PdfClown.NetStandard</PackageId>
+    <PackageId>PdfClown.NetStandard-signed</PackageId>
     <Version>0.2.0-beta</Version>
-    <PackageLicenseUrl>http://www.gnu.org/copyleft/lgpl.html</PackageLicenseUrl>
+    <!--<PackageLicenseUrl>http://www.gnu.org/copyleft/lgpl.html</PackageLicenseUrl>-->
     <PackageProjectUrl>https://pdfclown.org/</PackageProjectUrl>
-    <Description>PDF Clown is a free/libre open source implementation of the Portable Document Format (PDF) specification published by Adobe® Systems Inc., written as a class library in multiple languages (Java™ 6 and C#/.NET 4.0).
+    <Description>
+      PDF Clown is a free/libre open source implementation of the Portable Document Format (PDF) specification published by Adobe® Systems Inc., written as a class library in multiple languages (Java™ 6 and C#/.NET 4.0).
 
-This is an unofficial port to .NET Standard 2.0.</Description>
+      This is an unofficial port to .NET Standard 2.0.
+    </Description>
     <RepositoryUrl>https://github.com/TechnikEmpire/PdfClown.NetStandard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>pdfclown pdf pdf-renderer pdf-rendering</PackageTags>
     <PackageReleaseNotes>Initial port to .NET Standard 2.0.</PackageReleaseNotes>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>\\inova.ch\shares\assemblies\toolsets\keys\inova.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -107,5 +111,5 @@ This is an unofficial port to .NET Standard 2.0.</Description>
       <LogicalName>fonts.cff.StandardStrings</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-  
+
 </Project>
